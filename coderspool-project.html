@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Coderspool project page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<br>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section >
+							<header class="major">
+								<h1>Coderspool</h1>
+								<h3>1st CRUD on my own</h3>
+							</header>
+							
+							<div class="slideshow-container">
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_01.jpg" style="width:100%">
+									<div class="text">Home page</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_02.jpg" style="width:100%">
+									<div class="text">Welcome page</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_03.jpg" style="width:100%">
+								  	<div class="text">Bootcoders - Index view</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_05.jpg" style="width:100%">
+								  	<div class="text">Coders group - Edit view</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_06.jpg" style="width:100%">
+								  	<div class="text">Bootcoder - Edit view</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_09.jpg" style="width:100%">
+								  	<div class="text">Coders groups - Index view</div>
+								</div>
+								<div class="coderspoolSlides fade">
+									<img src="images/Coderspool_10.jpg" style="width:100%">
+								  	<div class="text">Coders group - Show view</div>
+								</div>								
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+							
+							<h3>Briefing:</h3>
+								<ul>
+									<li>Make a CRUD with Laravel</li>
+									<li>Topic: free choice</li>
+									<li>Try to use some foreign key and relationships</li>
+								</ul>
+						</section>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Elena<span style="font-weight: 200 !important;">Carballido</span></li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a> <span style="font-weight: 200 !important;"> & Customised by </span>Elena C.</li>
+					</ul>
+				</div>
+			</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- Slideshow Scripts -->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("coderspoolSlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+		</script>
+
+	</body>
+</html>

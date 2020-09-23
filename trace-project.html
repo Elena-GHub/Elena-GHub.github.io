@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TraCE project page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<br>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section >
+							<header class="major">
+								<h1><a href="http://tracecatalunya.org" target="_blank">Trace Catalunya</a></h1>
+								<h3>new website</h3>
+							</header>
+							
+							<div class="slideshow-container">
+								<div class="traceSlides fade">
+									<img src="images/trace_01.jpg" style="width:100%">
+								  <div class="text">Visitor home page</div>
+								</div>
+								<div class="traceSlides fade">
+									<img src="images/trace_02.jpg" style="width:100%">
+								  <div class="text">Member's weekly schedule</div>
+								</div>
+								<div class="traceSlides fade">
+									<img src="images/trace_03.jpg" style="width:100%">
+								  <div class="text">Admin - Users index view</div>
+								</div>
+								<div class="traceSlides fade">
+									<img src="images/trace_04.jpg" style="width:100%">
+								  <div class="text">Admin - Add activity view</div>
+								</div>
+								<div class="traceSlides fade">
+									<img src="images/trace_05.jpg" style="width:100%">
+								  <div class="text">Admin - CMS, Team view</div>
+								</div>
+								<div class="traceSlides fade">
+									<img src="images/trace_06.jpg" style="width:100%">
+								  <div class="text">Admin - CMS, Transparency view</div>
+								</div>								
+							</div>
+								<br>
+							<div style="text-align:center">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span>
+							</div>
+							
+							<h3>Briefing:</h3>
+								<ul>
+									<li>More modern look</li>
+									<li>Keep the two main association's colors</li>
+									<li>Completely new private area for members to help them carry out remotely their recovery program</li>
+									<li>No distracters for members as they are recovering from acquired brain traumatism</li>
+									<li>Highest UX/UI standards applied sitewide</li>
+									<li>Different views controlled by back-end policies based on user's role</li>	
+								</ul>
+						</section>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Elena<span style="font-weight: 200 !important;">Carballido</span></li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a> <span style="font-weight: 200 !important;"> & Customised by </span>Elena C.</li>
+					</ul>
+				</div>
+			</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- Slideshow Scripts -->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("traceSlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alumni project page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<br>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section >
+							<header class="major">
+								<h1>Alumni</h1>
+								<h3>All 22 coders worked in this project</h3>
+							</header>
+							
+							<div class="slideshow-container">
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_01.jpg" style="width:100%">
+									<div class="text">Alumni - Login</div>
+								</div>
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_02.jpg" style="width:100%">
+									<div class="text">Alumni - Projects</div>
+								</div>
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_03.jpg" style="width:100%">
+								  	<div class="text">Alumni - Job offers</div>
+								</div>
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_04.jpg" style="width:100%">
+								  	<div class="text">Alumni - Companies</div>
+								</div>
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_05.jpg" style="width:100%">
+								  	<div class="text">Alumni - Events</div>
+								</div>
+								<div class="alumniSlides fade">
+									<img src="images/Alumni_06.jpg" style="width:100%">
+								  	<div class="text">Alumni - Forum landing</div>
+                                </div>
+                                <div class="alumniSlides fade">
+									<img src="images/Alumni_07.jpg" style="width:100%">
+								  	<div class="text">Alumni - Forum thread</div>
+                                </div>
+                                <div class="alumniSlides fade">
+									<img src="images/Alumni_08.jpg" style="width:100%">
+								  	<div class="text">Alumni - Admin panel</div>
+								</div>							
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span>
+							</div>
+							
+							<h3>Briefing:</h3>
+								<ul>
+									<li>Platform for Factoria F5's bootcoders and ex-codersfor with Laravel</li>
+									<li>Features: welcoming bot, sections to exchange information about IT companies, tips, job offers, a forum.</li>
+                                    <li>Roles and permissions manager</li>
+                                    <li>Main challenge: coordinating the different teams</li>
+								</ul>
+						</section>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Elena<span style="font-weight: 200 !important;">Carballido</span></li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a> <span style="font-weight: 200 !important;"> & Customised by </span>Elena C.</li>
+					</ul>
+				</div>
+			</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- Slideshow Scripts -->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("alumniSlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 3000); // Change image every 3 seconds
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Best Buddies project page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<br>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section >
+							<header class="major">
+								<h1>Best Buddies</h1>
+								<h3>Short front-end practice with Express-Handlebars</h3>
+							</header>
+							
+							<div class="slideshow-container">
+								<div class="bestbuddiesSlides fade">
+									<img src="images/BestBuddies_01.jpg" style="width:100%">
+								  <div class="text">Single view</div>
+								</div>
+								<div class="bestbuddiesSlides fade">
+									<img src="images/BestBuddies_02.jpg" style="width:100%">
+								  <div class="text">Code snapshot</div>
+								</div>
+								</div>
+								<br>
+								<div style="text-align:center">
+								  <span class="dot"></span> 
+								  <span class="dot"></span>
+								</div>
+							
+							<h3>Briefing:</h3>
+								<ul>
+									<li>Make a list using Express-Handlebars</li>
+                                    <li>Reference: <a href="https://handlebarsjs.com/examples/partials/register.html" target="_blank">Handlebars - Partials</a></li>
+                                    <li>Extra reference I used: <a href="https://medium.com/@waelyasmina/a-guide-into-using-handlebars-with-your-express-js-application-22b944443b65" target="_blank">Guide To Using Handlebars With Your Node js App</a></li>
+								</ul>
+						</section>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Elena<span style="font-weight: 200 !important;">Carballido</span></li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a> <span style="font-weight: 200 !important;"> & Customised by </span>Elena C.</li>
+					</ul>
+				</div>
+			</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- Slideshow Scripts -->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("bestbuddiesSlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+		</script>
+
+	</body>
+</html>

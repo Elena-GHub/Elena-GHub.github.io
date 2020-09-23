@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sudoku project page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<br>
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section >
+							<header class="major">
+								<h1>Sudoku</h1>
+								<h3>Team project. Two-week sprint to discover Golang</h3>
+							</header>
+							
+							<div class="slideshow-container">
+								<div class="sudokuSlides fade">
+                                    <img src="images/sudoku_01.jpg" style="width:100%">
+                                    <div class="text">Sudoku desktop app - Starting view</div>
+                                </div>
+                                <div class="sudokuSlides fade">
+                                    <img src="images/sudoku_02.jpg" style="width:100%">
+                                    <div class="text">Sudoku desktop app - Input validation</div>
+                                </div>
+							</div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span>
+                            </div>
+							
+							<h3>Briefing:</h3>
+								<ul>
+									<li>Make a web app with Golang, Vue JS and <a href="https://wails.app/" target="_blank">Wails framework</a></li>
+                                    <li>Topic: sudoku</li>
+								</ul>
+						</section>
+					</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Elena<span style="font-weight: 200 !important;">Carballido</span></li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a> <span style="font-weight: 200 !important;"> & Customised by </span>Elena C.</li>
+					</ul>
+				</div>
+			</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	<!-- Slideshow Scripts -->
+		<script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("sudokuSlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+		</script>
+
+	</body>
+</html>
